@@ -434,7 +434,7 @@ class ClientResponses {
 
     static constexpr PhaseResponses PreheatResponses[] = {
         {}, //_first
-        { Response::Abort, Response::Cooldown, Response::PLA, Response::PETG,
+        { Response::Abort, Response::Cooldown, Response::PHA, Response::PLA, Response::PETG,
 #if PRINTER_IS_PRUSA_iX
             Response::PETG_NH,
 #endif

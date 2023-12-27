@@ -10,6 +10,7 @@
 
 const filament::Description filaments[size_t(filament::Type::_last) + 1] = {
     { "---", 0, 0, 0, Response::Cooldown },
+    { BtnResponse::GetText(Response::PHA), 200, 170, 0, Response::PHA },
     { BtnResponse::GetText(Response::PLA), 215, 170, 60, Response::PLA },
     { BtnResponse::GetText(Response::PETG), 230, 170, 85, Response::PETG },
 #if PRINTER_IS_PRUSA_iX

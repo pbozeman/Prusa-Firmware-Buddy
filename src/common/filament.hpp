@@ -15,6 +15,7 @@ struct Description {
 
 enum class Type : uint8_t {
     NONE = 0,
+    PHA,
     PLA,
     PETG,
 #if PRINTER_IS_PRUSA_iX

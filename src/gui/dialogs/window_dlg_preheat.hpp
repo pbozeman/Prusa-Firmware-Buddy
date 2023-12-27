@@ -56,7 +56,8 @@ protected:
 };
 
 #if PRINTER_IS_PRUSA_iX
-    #define ALL_FILAMENTS MI_Filament<filament::Type::PLA>,     \
+    #define ALL_FILAMENTS MI_Filament<filament::Type::PHA>,     \
+                          MI_Filament<filament::Type::PLA>,     \
                           MI_Filament<filament::Type::PETG>,    \
                           MI_Filament<filament::Type::PETG_NH>, \
                           MI_Filament<filament::Type::ASA>,     \
@@ -68,7 +69,8 @@ protected:
                           MI_Filament<filament::Type::PA>,      \
                           MI_Filament<filament::Type::FLEX>
 #else
-    #define ALL_FILAMENTS MI_Filament<filament::Type::PLA>,  \
+    #define ALL_FILAMENTS MI_Filament<filament::Type::PHA>,  \
+                          MI_Filament<filament::Type::PLA>,  \
                           MI_Filament<filament::Type::PETG>, \
                           MI_Filament<filament::Type::ASA>,  \
                           MI_Filament<filament::Type::PC>,   \
